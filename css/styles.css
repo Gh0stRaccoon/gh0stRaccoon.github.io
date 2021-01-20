@@ -1,0 +1,261 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Red Hat Text', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FCFCFC;
+    color: #555555;
+    font-size: 1.6em;
+    width: 100%;
+}
+
+.gridHelper{    
+    margin: 3.2rem 12.8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.hero{
+    height: calc(100vh - 12rem);
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd hd hd hd"
+        ". . . . ht ht ht ht . . . ."
+        ". . . . ht ht ht ht . . . ."
+        ". . . . ht ht ht ht . . . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . hi hi hi hi hi hi hi hi . ."
+        ". . . . . . . . . . . .";
+}
+
+header{
+    grid-area: hd;
+    display: flex;
+}
+
+.logo{
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+}
+
+.logo a {
+    height: 5.7rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    user-select: none;
+}
+.logo img{
+    height: inherit;
+}
+
+.logo span{
+    font-size: 2.4rem;
+    margin: 1.6rem;
+    max-width: 9ch;
+}
+
+nav {
+    flex-grow: 2;
+    height: inherit;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    margin-left: 2.4rem;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 1.6rem 3.2rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    transition: .2s;
+}
+
+nav ul li a:hover{
+    color: #29ABE2;
+}
+
+nav ul li:last-child a{
+    border: 0.2rem solid #29ABE2;
+    border-radius: 3.2rem;
+}
+
+nav ul li:last-child a:hover{
+    background-color: #4bb8e7;
+    color: #FCFCFC;
+}
+
+.hero_title{
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    grid-area: ht;
+    font-weight: 400;
+    font-size: 4.8rem;
+}
+
+.hero_img{
+    align-self: center;
+    justify-self: center;
+    grid-area: hi;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.background_rect{
+    position: absolute;
+    width: 100%;
+    object-fit: fill;
+    z-index: -1;
+}
+
+.presentation{
+    grid-area: tx;
+    color: #FCFCFC;
+    text-align: center;
+}
+
+.presentation h2{
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+}
+
+.presentation p{
+    font-size: 2.4rem;
+}
+
+.techContainer{
+    display: flex;
+    grid-area: tc;
+    background-color: #FCFCFC;
+    border: 0.1rem solid #CCC ;
+    border-radius: 3.2rem;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    /* con */
+    overflow: hidden;
+}
+
+.techContainer_item{
+    display: grid;
+    grid-template-rows: repeat(6,auto);
+    gap: 1.6rem;
+    padding: 3.2rem;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    border-left: 0.1rem solid #CCC;
+}
+
+.techContainer_item strong, .techContainer_item h2{
+    color: #29ABE2;
+    font-weight: 400;
+    /* text-transform: uppercase; */
+}
+
+.techContainer_item img{
+    height: 6.4rem;
+}
+
+.about{
+    grid-template-areas: 
+    ". . . . . . . . . . . ."
+    ". . . tx tx tx tx tx tx . . ."
+    ". . . tx tx tx tx tx tx . . ."
+    ". . . tx tx tx tx tx tx . . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . tc tc tc tc tc tc tc tc . ."
+    ". . . . . . . . . . . ."
+    ;
+}
+
+@media only screen and (max-width:1380px) { 
+	.hero{
+        height: calc(100vh - 12rem);
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            ". . . ht ht ht ht ht ht . . ."
+            ". . . ht ht ht ht ht ht . . ."
+            ". . . ht ht ht ht ht ht . . ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". hi hi hi hi hi hi hi hi hi hi ."
+            ". . . . . . . . . . . .";
+    }
+
+    .about{
+        grid-template-areas: 
+        ". . . . . . . . . . . ."
+        ". . tx tx tx tx tx tx tx tx . ."
+        ". . tx tx tx tx tx tx tx tx . ."
+        ". . tx tx tx tx tx tx tx tx . ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ". tc tc tc tc tc tc tc tc tc tc ."
+        ;
+    }
+}
+
+@media only screen and (max-width:1024px) { 
+
+    .about{
+        grid-template-areas: 
+        ". . . . . . . . . . . ."
+        ". tx tx tx tx tx tx tx tx tx tx ."
+        ". tx tx tx tx tx tx tx tx tx tx ."
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        "tc tc tc tc tc tc tc tc tc tc tc tc"
+        ;
+    }
+
+    .techContainer{
+        flex-direction: column;
+    }
+}

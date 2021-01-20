@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 179.79879 200.56489">
+  <defs>
+    <clipPath id="a">
+      <path d="M179.79878,139.10946V61.48793a22.67716,22.67716,0,0,0-11.33859-19.639L101.238,3.03816a22.6772,22.6772,0,0,0-22.67717,0L11.3386,41.84893A22.67715,22.67715,0,0,0,0,61.48793v77.62153a22.67717,22.67717,0,0,0,11.33858,19.639l67.22221,38.81076a22.67715,22.67715,0,0,0,22.67717,0l67.22221-38.81076A22.67718,22.67718,0,0,0,179.79878,139.10946Z" fill="none"/>
+    </clipPath>
+    <linearGradient id="b" data-name="Degradado sin nombre 15" x1="-208.23424" y1="520.75698" x2="-206.91613" y2="520.75698" gradientTransform="matrix(103.7008, 143.51897, 143.51897, -103.7008, -53167.21425, 83862.0821)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.4695" stop-color="#3e863d"/>
+      <stop offset="0.70492" stop-color="#619857"/>
+      <stop offset="1" stop-color="#76ac64"/>
+    </linearGradient>
+    <linearGradient id="c" x1="-208.55216" y1="520.08626" x2="-207.23405" y2="520.08626" gradientTransform="matrix(-103.7008, -143.51897, -143.51897, 103.7008, 53217.78218, -83612.34405)" xlink:href="#b"/>
+    <linearGradient id="d" data-name="Degradado sin nombre" x1="-205.29514" y1="523.20656" x2="-204.292" y2="523.20656" gradientTransform="matrix(103.53599, 50.75313, 50.75313, -103.53599, -5261.10584, 64664.48042)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#3e863d"/>
+      <stop offset="0.5" stop-color="#55934f"/>
+      <stop offset="0.8" stop-color="#5aad45"/>
+    </linearGradient>
+    <linearGradient id="e" data-name="Degradado sin nombre 3" x1="-206.30917" y1="519.81126" x2="-205.4963" y2="519.22908" gradientTransform="matrix(105.59898, -75.63091, -138.39145, -193.22802, 93730.04364, 84913.04678)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.16" stop-color="#6bbf47"/>
+      <stop offset="0.38" stop-color="#79b461"/>
+      <stop offset="0.47" stop-color="#75ac64"/>
+      <stop offset="0.7" stop-color="#659e5a"/>
+      <stop offset="0.9" stop-color="#3e863d"/>
+    </linearGradient>
+  </defs>
+  <title>Node</title>
+  <g clip-path="url(#a)">
+    <path d="M89.8994-42.84413,0-42.8441V177.4792H93.57887Z" fill="url(#b)"/>
+    <path d="M89.8994,268.65439l89.89938,0V48.33106H86.21993Z" fill="url(#c)"/>
+    <path d="M91.42909-4.41416,0,151.56945l89.89934,53.44209L179.79878,47.56945Z" fill="url(#d)"/>
+    <path d="M0,48.39526,89.8994,204.10555l89.89938-51.90343L89.8994-4.41416Z" fill="url(#e)"/>
+  </g>
+</svg>
