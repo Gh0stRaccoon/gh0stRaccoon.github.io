@@ -6,4 +6,4 @@ Está diseñado en gran medida con CSS grid, apoyado también por flexbox, utili
 Intenté utilizar la mejor semántica que pude, aunque, igual estoy seguro que la puedo mejorar.
 
 ## Javascript
-No tiene ningún poco de javascript por el momento. pero ya haré que haga cosas locas.
+No tiene ningún poco de javascript por el momento. pero, pronto haré que haga cosas locas.

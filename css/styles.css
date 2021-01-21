@@ -14,7 +14,6 @@ body{
     background-color: #FCFCFC;
     color: #555555;
     font-size: 1.6em;
-    width: 100%;
 }
 
 .gridHelper{    
@@ -237,7 +236,24 @@ nav ul li:last-child a:hover{
 }
 
 @media only screen and (max-width:1024px) { 
-
+    .gridHelper{    
+        margin: 3.2rem 2.4rem;
+    }
+    .hero{
+        grid-template-areas: 
+            "hd hd hd hd hd hd hd hd hd hd hd hd"
+            ". ht ht ht ht ht ht ht ht ht ht ."
+            ". ht ht ht ht ht ht ht ht ht ht ."
+            ". ht ht ht ht ht ht ht ht ht ht ."
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            "hi hi hi hi hi hi hi hi hi hi hi hi"
+            ". . . . . . . . . . . .";
+    }
     .about{
         grid-template-areas: 
         ". . . . . . . . . . . ."
