@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.travelin_example.diplincs",
+    "sha256_cert_fingerprints":
+    ["5D:BA:1A:53:7E:F9:B0:69:6C:18:58:59:28:E8:88:C1:D4:33:A1:4D:F9:94:22:39:BF:B0:3E:F8:FB:71:68:73"]
+  }
+}]
